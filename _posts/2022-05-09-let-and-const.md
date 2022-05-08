@@ -27,7 +27,7 @@ let name = 'this is variable';
 let hello;
 hello = 'Hello!';
 
-타입 변수명 = 값;
+키워드 변수명 = 값;
 
 ~~~
 각각 부분을 살펴보면 위와 같이 타입과 변수 명 그리고 변수에 대한 값을 작성하여 사용해요. 
@@ -54,9 +54,9 @@ TDZ는 일시적인 사각지대 라는 뜻이에요.
 
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FCfdPQ%2FbtqFNFCCfWu%2FEBd8c7QUZLSChL2AVVaiyK%2Fimg.jpg)
  
--  <span style="color:yellow">선언 단계 (Declaration phase)</span> : 변수를 실행 컨텍스트의 변수 객체에 등록하는 단계에요. 이 객체는 스코프가 참조하는 대상이 되어요.
-- 초기화 단계 (Initialization phase) : 실행 컨텍스트에 존재하는 변수 객체에 선언 단계의 변수를 위한 메모리를 준비하는 단계에요. 이 단계에서는 아직 할당된 값이 없기 때문에 메모리에 undefined로 초기화 된답니다.
-- 할당 단계 (Assignment phase) : 사용자가 undefined로 초기화된 메모리에 실제 값을 할당하는 단계에요.
+- <span style="color:yellow">선언 단계 (Declaration phase)</span> : 변수를 실행 컨텍스트의 변수 객체에 등록하는 단계에요. 이 객체는 스코프가 참조하는 대상이 되어요.
+- <span style="color:indigo">초기화 단계 (Initialization phase)</span> : 실행 컨텍스트에 존재하는 변수 객체에 선언 단계의 변수를 위한 메모리를 준비하는 단계에요. 이 단계에서는 아직 할당된 값이 없기 때문에 메모리에 undefined로 초기화 된답니다.
+- <span style="color:orange">할당 단계 (Assignment phase)</span> : 사용자가 undefined로 초기화된 메모리에 실제 값을 할당하는 단계에요.
 
 예전 자바스크립트 코드 혹은 글 들을 보면 `var` 라는 타입을 심심치 않게 볼 수 있어요. 위에서 설명했듯이 문제점이 있어 현재의 `let` 과 `const` 를 사용하고 있는데요, 좀 더 깊이 살펴보며 정확하게 알아보아요.
 
