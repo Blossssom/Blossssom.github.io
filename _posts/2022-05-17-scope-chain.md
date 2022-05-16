@@ -66,13 +66,17 @@ a();
 
 그 후 함수 호출 순으로 실행 컨텍스트 스택에 쌓이게 되고, 가장 나중에 호출된 `b()` 함수가 실행 컨텍스트 안에서 부터 탐색을 시작한다.
 
-[](/post-img/scope-chain01.jpg)
+
+![](/post-img/scope-chain01.jpg)
+
 
 그러면, `b()` 함수 안에서 변수 `v` 를 탐색하기 시작하는데, 만약 해당 변수인 `v` 가 없으면 해당 함수를 감싸고 있는 상위 스코프인 `a()` 함수를 탐색하기 시작한다.
 
 만약 바로 상단의 함수에 변수 `v` 가 존재하면 해당 `v` 를 참조하게 되고, 없다면 더 상위 스코프, 위 예제에서는 전역 객체를 탐색해 `v` 를 찾아낸다.
 
-[](/post-img/scope-chain02.png)
+
+![](/post-img/scope-chain02.png)
+
 
 결국 전역객체에서 까지 찾지 못한다면 v가 없다고 **VM500:1 Uncaught ReferenceError: v is not defined라는 에러**반환 하게 된다.
 
@@ -86,7 +90,9 @@ a();
 
 **console.dir()**을 사용하면, 개발자 도구로 쉽게 확인이 가능하다.
 
-[](/post-img/scope-chain03.png)
+
+![](/post-img/scope-chain03.png)
+
 
 b() 함수에 **[[Scopes]] 속성이 존재**한다. 이것이 바로 스코프 체인(scope chain)이다.
 
