@@ -30,20 +30,20 @@ tags: [javascript, algorithm]
 
 ### 예시 1.
 
-![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/772d150b-99ce-4d2f-a67a-f679f2dfa4ac/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220513%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220513T200502Z&X-Amz-Expires=86400&X-Amz-Signature=423175d9b5f934a6e8cddf5d2d9c0f3994e35cf8d10d0d1d23fb76839cde2faf&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+![Untitled](/post-img/bigo-space01.png)
 
 위 예시를 보면 배열 `arr` 을 받아 그 길이만큼 반복하며 반복횟수를 `total` 에 누적하여 더하는 코드이다. 이코드의 공간 복잡도를 살펴보기 전 확실하게 해야할 부분은 이 파트에서 기존의 시간복잡도가 아닌 공간복잡도 이므로 우리는 **공간**에 집중해야한다.
 
-![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/934e9204-4be1-49fd-a174-d75c2ce15967/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220513%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220513T200513Z&X-Amz-Expires=86400&X-Amz-Signature=1e9ad001a99d5d498fcacab8d3170a4df5348015de8cca2265650f0510ac1376&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+![Untitled](/post-img/bigo-space02.png)
 
 각 변수를 살펴보면 원시타입 `number` 이며 불변의 공간이기 때문에 입력의 크기가 차지하는 공간과는 아무 상관이 없다.
 
-![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/530f4f30-b8c0-406c-bf67-8411fc7d8776/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220513%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220513T200527Z&X-Amz-Expires=86400&X-Amz-Signature=9e3425127425e2f2fc9644defcb8810c8894415973ad829d7d334b8b0a8c1193&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+![Untitled](/post-img/bigo-space03.png)
 
 그렇다면 이러한 경우는 어떨까? 
 이전과 달리 새로운 배열을 선언하고 반복과정에서 배열에 값을 추가하고 있다.
 
-![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/eb1ce52d-e2bc-4fa0-bae6-30018f71533e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220513%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220513T200537Z&X-Amz-Expires=86400&X-Amz-Signature=b9ccc94715ef8bc3ff6e84b5d9af806c293eeecc6bcfe53d86a837e6ff0d6f11&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+![Untitled](/post-img/bigo-space04.png)
 
 따라서 `arr` 즉, input이 커짐에 따라 배열의 공간도 그와 비례해서 커지게 되므로 `O(n) space` 공간을 차지한다.
 
@@ -69,7 +69,7 @@ log2(8) = 3
 2^3 = 8
 ```
 
-![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5d5a6d0b-0fb1-4b2f-9b54-5b067d2ce2e0/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220513%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220513T200552Z&X-Amz-Expires=86400&X-Amz-Signature=ac7cca90b98018c8d5596d46e62abe4f957a423bb34e8f90a6d11b07b85b1027&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+![Untitled](/post-img/bigo-space05.png)
 
 위에서 설명했듯이 지수함수와 역함의 관계로 마치 `1 / 2` 가 0.5 이고 반대로 `2 * 0.5` 가 1인 듯이 로그함수와 지수함수는 짝의 관계라 할 수 있다.
 
@@ -81,13 +81,13 @@ log2(8) = 3
 
 어떠한 이진 로그 `log2()` 를 대략 계산하기 위해서는 그 숫자가 1보다 작아지기 전에 2로 나눠지는 횟수이다.  
 
-![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1c993716-6c19-4a1e-8f7e-4be32cefaeb0/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220513%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220513T200606Z&X-Amz-Expires=86400&X-Amz-Signature=8aed5de688d04ff4acf4b6387643a86f518f3174e3a52820877db5f4e1ba6241&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+![Untitled](/post-img/bigo-space06.png)
 
 위 예시를 보면 확실하게 알 수 있지만 25처럼 정확하게 나눌 방법이 없는 경우도 있다. 하지만 복잡도에 한해서 실제 계산은 그리 중요하지 않다.
 
 꾸준히 이야기 하지만 **전반적인 추세** 즉, 그래프에 어떻게 보이는가? 가 가장 중요하다.
 
-![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a023d325-faf0-4068-89b2-ebed3405de3b/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220513%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220513T200615Z&X-Amz-Expires=86400&X-Amz-Signature=a3b68a7df471c088235c1ad58c2216b497b5734dfafc9134e657594ec99b4a3d&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+![Untitled](/post-img/bigo-space07.png)
 
 `log n` 시간 복잡도를 가진 알고리즘은 보다시피 처음에는 조금 가파르지만 서서히 경사가 작아지며 `O(1)` 의 그래프와 가까이 붙어있다. 따라서 `log n` 의 시간 복잡도를 가진 알고리즘은 시간 성능이 매우 효율적이라고 볼 수 있다.
 
