@@ -2,7 +2,7 @@
 
 layout: post
 
-title: [SEB TIL] Section1 회고
+title: SEB TIL Section1 회고
 
 subtitle: SEB TIL
 
