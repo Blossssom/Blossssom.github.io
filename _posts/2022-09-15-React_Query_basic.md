@@ -2,7 +2,7 @@
 
 layout: post
 
-title: 22 / 09 / 07 My TIL [React Query basic]
+title: 22 / 09 / 15 My TIL [React Query basic]
 
 subtitle: TIL
 
