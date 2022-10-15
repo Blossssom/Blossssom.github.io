@@ -1,3 +1,17 @@
+---
+
+layout: post
+
+title: Main project Day 2
+
+subtitle: SEB TIL
+
+categories: coding
+
+tags: [javascript, React, project]
+
+---
+
 # Main Project Day 2
 
 **2022-09-08**
